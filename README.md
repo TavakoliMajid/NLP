@@ -1,4 +1,3 @@
-
 # Project: LangLens
 
 ## Overview
@@ -15,22 +14,25 @@ This notebook provides a framework for summarizing long documents by:
 - Slicing documents into manageable chunks for summarization.
 
 ### 2. `english_vs_nonenglish_classifier.ipynb`
-A simple Naïve Bayes classifier that distinguishes between English and non-English texts:
+A Naïve Bayes classifier that distinguishes between English and non-English texts:
 - Uses the Universal Declaration of Human Rights (UDHR) corpus from NLTK.
 - Implements preprocessing, feature extraction, and model training.
 - Achieves classification using a bag-of-words approach.
+- Provides performance metrics such as accuracy and confusion matrix.
 
 ### 3. `language_syntax_tree_builder.ipynb`
 This notebook builds syntax trees for English, French, and German sentences:
 - Uses Context-Free Grammar (CFG) with the NLTK library.
 - Demonstrates parsing of sample sentences in each language.
 - Visualizes syntax trees for better linguistic understanding.
+- Supports visual rendering of parse trees in the notebook.
 
 ### 4. `wikipedia_geo_text_analysis.ipynb`
 Classifies Wikipedia text as geographic or non-geographic using:
 - Preprocessing techniques like tokenization, stop word removal, stemming, and lemmatization.
-- Data collection from Wikipedia using search queries and category-based expansion.
+- Advanced data collection from Wikipedia using search queries and category-based expansion.
 - A Naïve Bayes classifier with feature extraction and model evaluation.
+- Includes methods for both search-based and category-based dataset expansion.
 
 ---
 
@@ -47,7 +49,7 @@ pip install nltk wikipedia requests
 ### Usage
 1. Clone the repository:
 ```bash
-git clone https://github.com/username/LangLens.git
+git clone https://github.com/TavakoliMajid/LangLens.git
 cd LangLens
 ```
 
@@ -75,3 +77,4 @@ Contributions are welcome! Please fork this repository, create a feature branch,
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
